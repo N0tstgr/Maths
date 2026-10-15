@@ -7,7 +7,7 @@ class Solution {
             for (int minute = 0; minute < 60; minute++) {
 
                 if (Integer.bitCount(hour) + Integer.bitCount(minute) == turnedOn) {
-                    result.add(hour + ":" + (minute < 10 ? "0" : "") + minute);
+                    result.add(hour + ":" + (minute < 10 ? "0" : "  ") + minute);
                 }
             }
         }
